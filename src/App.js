@@ -9,11 +9,6 @@ const FavouriteAuthors =lazy(()=>import("./pages/FavouriteAuthors"))
 
 const App = () => {
 
-  const currentPath = window.location.pathname;
-  if(currentPath==="/"){
-    window.location.href="/authors"
-  }
-
   return (
     <FavouriteProvider>
       <BrowserRouter>
